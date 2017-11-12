@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.lang.*;
+
+public class Main {
+  public static void main(String[] args) {
+
+    int vowelCount = 0;
+    
+    Scanner stringScanner = new Scanner (System.in);
+    System.out.println("Please enter the string to be analyzed: ");
+    String targetString = stringScanner.nextLine();
+    System.out.println("The string to be analyzed is: " + targetString + ".");
+    
+   for (int i = 0; i < targetString.length(); i++) 
+    
+    {
+    
+      if (targetString.charAt(i) == 'a' || 
+          targetString.charAt(i) == 'e' || 
+          targetString.charAt(i) == 'i' || 
+          targetString.charAt(i) == 'o' ||
+          targetString.charAt(i) == 'u') 
+      
+      {
+        vowelCount ++;
+      }
+    
+    }  
+  
+    System.out.println("This string has " + vowelCount + " vowels");
+  
+  } 
+  
+  
+}
