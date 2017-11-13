@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.lang.*;
+
+//Retrieves a char of a given index position in a given string 
+
+public class Main {
+  
+  public static void main(String[] args) {
+  
+    System.out.println("Ingrese el texto que quiere analizar: ");
+    Scanner stringScanner = new Scanner(System.in);
+    String targetText = stringScanner.nextLine();
+    
+    System.out.println("Ingrese la posicion de la letra que desea obtener: ");
+    Scanner indexScanner = new Scanner(System.in);
+    int indexNumber = indexScanner.nextInt();
+    
+      if (indexNumber >= targetText.length()){
+      
+      System.out.println("Index is larger than length");
+      
+    }
+    
+    if (indexNumber < 0){
+      
+      System.out.println("Index is can't be negative");
+      
+    }else {
+      
+       System.out.println(targetText.charAt(indexNumber));
+      
+    }
