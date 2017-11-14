@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.*;
 
-//Counts the vowels of a given string
+//Compares two strings lexicographically
 
 public class Main {
   public static void main(String[] args) {
